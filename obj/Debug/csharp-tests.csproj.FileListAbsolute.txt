@@ -1,0 +1,2 @@
+C:\Users\Omega\Projects\CSharp\csharp-tests\csharp-tests\bin\Debug\csharp-tests.exe.config
+C:\Users\Omega\Projects\CSharp\csharp-tests\bin\Debug\csharp-tests.exe.config
