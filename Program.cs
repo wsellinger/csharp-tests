@@ -13,11 +13,33 @@ namespace csharp_tests
             bool results;
 
             //Run Test
-            results = true;
+            results = AnagramTest("momdad", "dadmom");
 
             Console.WriteLine("Test results: " + results);
             Console.WriteLine("Press any key to exit.");
             Console.ReadKey();
+        }
+
+        public static bool AnagramTest(string stringA, string stringB)
+        {
+            foreach (char character in stringA)
+            {
+                if (stringB.Contains(character.ToString()))
+                {
+                    stringB = stringB.Remove(stringB.IndexOf(character), 1);
+                }
+                else
+                {
+                    return false;
+                }
+            }
+
+            if (stringB.Length > 0)
+            {
+                return false;
+            }
+
+            return true;
         }
     }
 }
