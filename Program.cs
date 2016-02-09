@@ -8,8 +8,16 @@ namespace csharp_tests
 {
     class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
+            bool results;
+
+            //Run Test
+            results = true;
+
+            Console.WriteLine("Test results: " + results);
+            Console.WriteLine("Press any key to exit.");
+            Console.ReadKey();
         }
     }
 }
