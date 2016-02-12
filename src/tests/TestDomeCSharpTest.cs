@@ -4,22 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace csharp_tests
+namespace csharp_tests.src.tests
 {
-    class Program
+    class TestDomeCSharpTest
     {
-        public static void Main(string[] args)
-        {
-            bool results;
-
-            //Run Test
-            results = AnagramTest("momdad", "dadmom");
-
-            Console.WriteLine("Test results: " + results);
-            Console.WriteLine("Press any key to exit.");
-            Console.ReadKey();
-        }
-
         public static bool AnagramTest(string stringA, string stringB)
         {
             foreach (char character in stringA)
